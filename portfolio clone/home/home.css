@@ -1,0 +1,96 @@
+/* Common styles for all screen sizes */
+* {
+  text-decoration: none;
+}
+
+.parent {
+  background-image: url(/images/hero\ image\ 2.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 47.5rem;
+}
+
+.childDiv {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content p {
+  margin: 0px;
+}
+
+.button {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  transition: all 0.5s;
+  background: transparent;
+  font-size: 2rem;
+  flex-wrap: wrap;
+}
+
+.butContent {
+  align-items: center;
+  font-size: 2rem;
+  justify-content: center;
+  padding: 0.625rem 1.25rem;
+  background-color: #1b242f;
+  border: solid 0.125rem white;
+  border-radius: 0.125rem;
+  color: white;
+  display: flex;
+}
+
+.content {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.butContent:hover {
+  background-color: rgb(83, 83, 212);
+}
+
+.name {
+  color: rgb(206, 38, 66);
+  font-family: "Raleway-semibold";
+}
+
+/* Media Query for Smaller Screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .parent {
+    height: 35rem; /* Adjust the height for smaller screens */
+  }
+
+  .content {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
+
+  .button {
+    font-size: 1.5rem; /* Decrease button font size for smaller screens */
+  }
+}
+
+/* Media Query for Larger Screens (e.g., desktop) */
+@media (min-width: 1024px) {
+  .parent {
+    height: 60rem; /* Adjust the height for larger screens */
+  }
+
+  .content {
+    font-size: 2.5rem; /* Increase font size for larger screens */
+  }
+
+  .button {
+    font-size: 2.5rem; /* Increase button font size for larger screens */
+  }
+}

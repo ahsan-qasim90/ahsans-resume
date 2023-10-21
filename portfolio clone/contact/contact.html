@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class='fas fa-bars'></i></button>
+        </label>
+        <!-- <label class="logo"><span class="logoName">Ahsan's Portfolio</span></label> -->
+        <ul>
+            <li><a class="active" href="/home/home.html">Home</a></li>
+            <li><a href="/about/about.html">About</a></li>
+            <li><a href="/projects/projects.html">Projects</a></li>
+            <li><a href="/blog/blog.html">Blog</a></li>
+            <li><a href="/contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    <!-- contact section began here  -->
+    <section  class="contactSec">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+       <path d="M0 0 L50 100 L100 0 Z" fill="#F5F5F5" stroke="#F5F5F5"></path>
+   </svg>
+   
+   <!-- contact form -->
+   
+   <div class="conHead" data-animation="slide-in-left">
+     CONTACT
+   </div>
+   <div class="header-bar waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".25s" style="animation-delay: 0.25s;"></div>
+   <div class="content" data-animation="slide-in-right" data-delay=".5s" style="animation-delay: 0.5s;">
+     Have a question or want to work together?
+   </div>
+   
+   <form class="waypoint animated pop-in" data-animation="pop-in" data-delay=".5s" id="contact-form" style="animation-delay: 0.5s;">
+     <input placeholder="Name" type="text" name="name" required="" class="formContent1">
+     <input placeholder="Enter email" type="email" name="email" required="" class="formContent1">
+     <textarea placeholder="Your Message" type="text" name="message"></textarea>
+    
+     <input class="button" type="submit" id="submit" value="SUBMIT">
+   </form>
+   
+</body>
+</html>
